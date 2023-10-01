@@ -1,0 +1,129 @@
+<link rel="stylesheet" type="text/css" href="./basicmath.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Maths</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Calculation Operations</b></h1>
+        <div id="box1">
+            <div class="square">
+            <span><b>Square of: </b>
+                <input type="Number" placeholder="Enter Number" id="Usernumber">
+                <button onclick="squareof(document.getElementById('Usernumber').value)" id="button">Square it</button>
+                <span id="squaref"></span>
+                <script>
+                    function squareof(x) {
+                        console.log(x * x);
+                        document.getElementById('squaref').innerHTML = x * x;
+                    }
+                </script>
+            </span>
+        </div>
+
+            <div class="half"><span><b>Half of: </b>
+                <input type="Number" placeholder="Enter Number" id="Usernumber2">
+                <button onclick="halfof(document.getElementById('Usernumber2').value)" id="button">Half it</button>
+                <span id="halff"></span>
+                <script>
+                    function halfof(x) {
+                        console.log(x * x);
+                        document.getElementById('halff').innerHTML = x/2;
+                    }
+                </script>
+            </span>
+        </div>
+
+            <div class="percentage">
+            <span><b>Percentage of: </b>
+                <input type="Number" placeholder="Enter Number" id="Usernumber31">
+                <input type="Number" placeholder="Enter Number" id="Usernumber32">
+                <button onclick="percentf(document.getElementById('Usernumber31').value,document.getElementById('Usernumber32').value)">Find it</button>
+
+                <span id="percentageof"></span>
+
+                <script>
+                    function percentf(x,y) {
+                        console.log(x*100/y,"%");
+                        document.getElementById('percentageof').innerHTML = x*100/y+"%";
+                    }
+                </script>
+            </span>
+        </div>
+
+            <div class="area">
+            <span><b>Area of a circle: </b>
+                <input type="Number" placeholder="Enter Number" id="Usernumber4">
+                <button onclick="areaof(document.getElementById('Usernumber4').value)">Area</button>
+                <span id="areaf"></span>
+                <script>
+                    function areaof(x) {
+                        console.log("area",Math.PI*x*x);
+                        document.getElementById('areaf').innerHTML = Math.PI*x*x;
+                    }
+                </script>
+            </span>
+        </div>
+        </div>
+
+        <div id="box2">
+            <h2>3 in 1</h2>
+            <div id="3in1">
+                <span><b>Your number: </b></span>
+                <input  type="number" placeholder="Enter number" id="lastnumber">
+                <button onclick="square(getElementById('lastnumber').value), half(getElementById('lastnumber').value), area(getElementById('lastnumber').value)" >Get It All</button>
+                <div class="square">
+                <span><b>Square is: </b>
+                <span id="lastsquare"></span>
+
+                <script>
+                function square(x) {
+                        document.getElementById('lastsquare').innerHTML = x * x;
+                    }
+                    
+                </script></span>
+                </div>
+
+                <div class="half">
+                    <span><b>Half is: </b>
+                    <span id="lasthalf"></span>
+    
+                    <script>
+                    function half(x) {
+                            document.getElementById('lasthalf').innerHTML = x/2;
+                        }
+                        
+                    </script></span>
+                    </div>
+            
+                    <div class="area">
+                        <span><b>Area is: </b>
+                        <span id="lastarea"></span>
+        
+                        <script>
+                        function area(x) {
+                                document.getElementById('lastarea').innerHTML = Math.PI*x * x;
+                            }
+                            
+                        </script></span>
+                        </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

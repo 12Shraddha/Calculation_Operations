@@ -1,0 +1,61 @@
+body{
+   overflow: hidden;
+   margin: 0%;
+   padding: 0%;
+}
+
+.container{
+    position: relative;
+    padding: 2px;
+    background-color: rgb(172, 112, 0);
+    text-align: center;
+     
+}
+
+
+ #box1, #box2{
+    background-color:  rgb(240, 217, 102);
+    position: relative;
+    display: flexbox;
+    padding: 20px;
+    height:40%;
+    
+ }
+
+
+input:focus{
+   background-color:rgb(218, 166, 68);
+   color: white;
+
+}
+
+input{
+   border-radius: 5px;
+   padding: 5px;
+   margin: 5px;
+   
+}
+
+button {
+   background-color: rgb(8, 144, 144);
+   border-radius: 5px;
+   padding: 5px;
+   color: white;
+
+}
+
+button:focus{
+   background-color: rgb(132, 190, 61);
+   
+}
+
+ #box2{
+    background-color: rgb(237, 203, 35);
+    padding: 10px;
+  
+ }
+
+
+
+
+ 
